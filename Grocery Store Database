@@ -1,0 +1,37 @@
+#Challenge: Design a store database. The database should contain at least 5 columns and at least 15 items.
+
+CREATE TABLE store (
+  id INTEGER PRIMARY KEY, 
+  item TEXT, 
+  category TEXT, 
+  Aisle INTEGER, 
+  Quantity INTEGER, 
+  Price INTEGER
+);
+
+INSERT INTO store VALUES(1, "Bananas (2lb)", "Fruit", 1, 20, 1.39);
+INSERT INTO store VALUES(2, "Grapes (1.5lb bag)", "Fruit", 1, 18, 3.99);
+INSERT INTO store VALUES(3, "Lettuce (9oz)", "Vegetable", 1, 8, 2.39);
+INSERT INTO store VALUES(4, "Cereal", "Breakfast", 2, 6, 3.49);
+INSERT INTO store VALUES(5, "Pancake Mix", "Breakfast", 2, 6, 2.79);
+INSERT INTO store VALUES(6, "Bacon (160z)", "Meat", 3, 20, 4.49);
+INSERT INTO store VALUES(7, "Chicken (2lb)", "Meat", 3, 22, 5.98);
+INSERT INTO store VALUES(8, "Deli Meat (9oz)", "Meat", 3, 15, 4.39);
+INSERT INTO store VALUES(9, "Ground Beef (1lb)", "Meat", 3, 17, 6.29);
+INSERT INTO store VALUES(10, "Ice Cream", "Frozen", 4, 9, 2.79);
+INSERT INTO store VALUES(11, "Pizza", "Frozen", 4, 12, 6.49);
+INSERT INTO store VALUES(12, "Sugar", "Baking", 5, 13, 2.19);
+INSERT INTO store VALUES(13, "Crackers", "Snacks", 6, 5, 3.39);
+INSERT INTO store VALUES(14, "Granola Bars", "Snacks", 6, 5, 5.79);
+INSERT INTO store VALUES(15, "Nuts", "Snacks", 6, 13, 3.69);
+INSERT INTO store VALUES(16, "Bread", "Bakery", 7, 24, 3.19);
+INSERT INTO store VALUES(17, "Cheese", "Refrigerated", 8, 16, 2.49);
+INSERT INTO store VALUES(18, "Cream (1qt)", "Refrigerated", 8, 14, 2.99);
+INSERT INTO store VALUES(19, "Eggs (12ct)", "Refrigerated", 8, 8, 1.19);
+INSERT INTO store VALUES(20, "Milk (1gal)", "Refrigerated", 8, 11, 2.89);
+INSERT INTO store VALUES(21, "Soft Drinks", "Drinks", 9, 21, 1.99);
+INSERT INTO store VALUES(22, "Bath Soap", "Personal Care", 10, 16, 6.99);
+INSERT INTO store VALUES(23, "Cotton Swabs", "Personal Care", 10, 27, 1.99);
+INSERT INTO store VALUES(24, "Dental Floss", "Personal Care", 10, 33, 3.79);
+INSERT INTO store VALUES(25, "Shampoo (2ct)", "Personal Care", 10, 14, 7.49);
+INSERT INTO store VALUES(26, "Toothpaste", "Personal Care", 10, 28, 3.49);
