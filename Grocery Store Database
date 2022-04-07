@@ -1,14 +1,17 @@
-#Challenge: Design a store database. The database should contain at least 5 columns and at least 15 items.
+#Challenge 1: Design a store database. The database should contain at least 5 columns and at least 15 items.
+#Challenge 2: Order your items by highest to lowest price.
+#Challenge 3: Calculate how many unique items are located on each aisle.
+#Challenge 4: Calculate total value of each item. Limit the total value to two decimal points.
 
+#Challenge 1: Design a store database. The database should contain at least 5 columns and at least 15 items.
 CREATE TABLE store (
   id INTEGER PRIMARY KEY, 
-  item TEXT, 
-  category TEXT, 
+  Item TEXT, 
+  Category TEXT, 
   Aisle INTEGER, 
   Quantity INTEGER, 
   Price INTEGER
 );
-
 INSERT INTO store VALUES(1, "Bananas (2lb)", "Fruit", 1, 20, 1.39);
 INSERT INTO store VALUES(2, "Grapes (1.5lb bag)", "Fruit", 1, 18, 3.99);
 INSERT INTO store VALUES(3, "Lettuce (9oz)", "Vegetable", 1, 8, 2.39);
@@ -35,3 +38,12 @@ INSERT INTO store VALUES(23, "Cotton Swabs", "Personal Care", 10, 27, 1.99);
 INSERT INTO store VALUES(24, "Dental Floss", "Personal Care", 10, 33, 3.79);
 INSERT INTO store VALUES(25, "Shampoo (2ct)", "Personal Care", 10, 14, 7.49);
 INSERT INTO store VALUES(26, "Toothpaste", "Personal Care", 10, 28, 3.49);
+
+#Challenge 2: Use select statements to order your items by highest to lowest price.
+SELECT * FROM store ORDER BY Price DESC;
+
+#Challenge 3: Calculate how many unique items are located on each aisle.
+SELECT COUNT(Item) AS Total_Items, Aisle FROM store GROUP BY Aisle;
+
+#Challenge 4: Calculate total value of each item. Limit the total value to two decimal points.
+SELECT Item, ROUND(Quantity*Price, 2) AS Total_Value FROM store;
